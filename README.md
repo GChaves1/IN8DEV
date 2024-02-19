@@ -14,7 +14,7 @@
   `cd nome-do-repositorio`                                                                                                                                                                                                                        
   `npm install`                                                                                                                                                                                                                                   
 
-  3. Execute o aplicativo:
+  3. Execute o aplicativo:                                                                                                                                                                                                                      
   `npm start`
 
 
