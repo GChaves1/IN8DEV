@@ -29,4 +29,5 @@
 
 
 # Tecnologia Utilizada
+  - javaScript
   - React.js
