@@ -10,9 +10,9 @@
   1. Clone o repositório:                                                                                                                                                                                                                         
   `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
-  2. Instale as dependências:
-  `cd nome-do-repositorio`
-  `npm install`
+  2. Instale as dependências:                                                                                                                                                                                                                     
+  `cd nome-do-repositorio`                                                                                                                                                                                                                        
+  `npm install`                                                                                                                                                                                                                                   
 
   3. Execute o aplicativo:
   `npm start`
