@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+// App.jsx
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Register from './components/Register/Register';
+import List from './components/List/List';
+import Footer from './components/Footer/Footer';
+import ScrollUp from './components/scrollup/ScrollUp';
 
-function App() {
+const App = () => {
+  
+  const [formDataList, setFormDataList] = useState(() => {
+    const storedData = localStorage.getItem('formDataList');
+    return storedData ? JSON.parse(storedData) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('formDataList', JSON.stringify(formDataList));
+  }, [formDataList]);
+
+  const handleFormSubmit = formData => {
+    setFormDataList([...formDataList, formData]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+
+      <main className='main'>
+        <Home />
+        <Register onFormSubmit={handleFormSubmit} />
+        <List formDataList={formDataList} />
+        <Footer />
+      </main>
+
+      <ScrollUp />
+    </>
   );
 }
 

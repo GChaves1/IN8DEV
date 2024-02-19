@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Helvetica;
+  src: url('./assets/Fonts/HelveticaUltraLt_0.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Roboto-Light;
+  src: url('./assets/Fonts/Roboto-Light_0.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('./assets/Fonts/Roboto-Regular_0.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: ps;
+  src: url(./assets/Fonts/ps.ttf);
 }
 
-.App-link {
-  color: #61dafb;
+:root {
+  /*---------- CORES ----------*/
+
+  --first-color: #29abe2;
+  --second-color: #012d51;
+  --third-color: #808080;
+
+  /*---------- FONTE E TIPOGRAFIA ----------*/
+  --robotoL-font: "Roboto-Light", sans-serif;
+  --robotoR-font: "Roboto-Regular", sans-serif;
+  --helvetica-font: "Helvetica", sans-serif;
+  --ps-font: "ps", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--first-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: var(--first-color);
+  font-family: var(--Helvetica-font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------- PONTOS DE QUEBRA ----------*/
+
+/* telas largas */
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+  
+}
+
+
+/* telas medias */
+@media screen and (min-width:768px) and (max-width: 849px) {
+  
+}
+
+@media screen and (min-width:600px) and (max-width: 767px){
+
+}
+
+/* telas pequenas */
+@media screen and (min-width:350px) and (max-width:599px) {
+  
 }

@@ -1,0 +1,89 @@
+.scrollup {
+  position: fixed;
+  right: 5rem;
+  bottom: -20%;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--first-color);
+  opacity: 1;
+  padding: 0.3rem 0.5rem;
+  border: 0.1px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  transition: .4s;
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
+/* Show Scroll */
+.show-scroll {
+  bottom: 5rem;
+}
+
+
+/*---------- PONTOS DE QUEBRA ----------*/
+
+/* telas largas */
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+  .scrollup {
+    right: 3.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+}
+
+/* telas medias */
+@media screen and (min-width:768px) and (max-width: 849px) {
+  .scrollup {
+    right: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .show-scroll {
+    bottom: 4rem;
+  }
+} 
+  
+@media screen and (min-width:600px) and (max-width: 767px){
+  
+  .scrollup {
+    right: 3.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .show-scroll {
+    bottom: 4rem;
+  }
+}
+
+/* telas pequenas */
+@media screen and (min-width:350px) and (max-width:599px) {
+
+  .scrollup {
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .show-scroll {
+    bottom: 3rem;
+  }
+} 
+
+@media screen and (min-width:300px) and (max-width:349px) {
+  .scrollup {
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .show-scroll {
+    bottom: 3rem;
+  }
+}
+ 
