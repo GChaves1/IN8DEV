@@ -31,4 +31,4 @@
 # Tecnologia Utilizada
   - javaScript
   - React.js
->>>>>>> e8f07a13184a7f88bbb0752823000bb49a987091
+
