@@ -8,7 +8,7 @@
 
 # Como usar
   1. Clone o repositório:
-  git clone https://github.com/seu-usuario/nome-do-repositorio.git
+  `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
   2. Instale as dependências:
   cd nome-do-repositorio
