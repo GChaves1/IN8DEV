@@ -133,7 +133,8 @@
     background: var(--first-color);
     clip-path: circle(100px at -90% 15%);
     transition: 1s ease-out;
-
+    border-right: .5px solid #fff;
+    border-bottom: .5px solid #fff;
     margin-left: 0;
     flex-direction: column;
     justify-content: space-around;
