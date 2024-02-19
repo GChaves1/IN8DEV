@@ -11,7 +11,7 @@ function DesktopMobile({ formDataList }) {
     if (formDataList && formDataList.length > 0) {
       const newDataButtons = formDataList.slice(-4).reverse();
       const emptyDataButtons = Array(4 - newDataButtons.length).fill({});
-      setDataButtons([...emptyDataButtons, ...newDataButtons]);
+      setDataButtons([...newDataButtons ,...emptyDataButtons]);
     } else {
 
       /* Se não houver dados do cadastro, preenche com valores vazios */
