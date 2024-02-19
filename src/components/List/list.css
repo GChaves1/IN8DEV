@@ -1,84 +1,3 @@
-/* .list__register {
-  margin: 0 2px 0 0;
-  font-family: var(--ps-font);
-  color: var(--third-color);
-  text-align: start;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-.tag {
-  position: static;
-  text-align: start;
-  margin: 0 2rem 0 5%;
-  padding: 0 0 .2rem 0;
-  color: var(--second-color);
-}
-
-.list__feature {
-  content: "-";
-  display: flex;
-  margin: .2rem 0 0 1rem;
-  width: 9%;
-  height: 2px;
-  background: var(--first-color);
-}
-
-.list__button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.list__button {
-  background-color: #fff;
-  border: 2.5px solid var(--third-color);
-  padding: 0rem 2rem 0rem 2rem;
-  width: 100%;
-  font-size: 1rem;
-}
-
-.list__button:nth-child(1),
-.list__button:nth-child(2),
-.list__button:nth-child(3) {
-  margin: 0 2px 0 0;
-}
-
-.list__button.active {
-  border-color: var(--first-color) !important;
-  color: var(--first-color) !important;
-}
-
-
-.list__register.list__email,
-.list__register.list__birthdate {
-  border-top: none;
-  border-bottom: none;
-}
-.list__register.list__name{
-  z-index: 1;
-  border-top: 3px solid var(--first-color);
-  border-bottom: none;
-}
-
-
-.list__register.list__number {
-  border-top: none;
-  color: var(--third-color);
-}
-
-.list__container {
-  width: 91.5%;
-}
-
-.list__data-table {
-  color: var(--second-color);
-  height: 11rem;
-} */
-
-
-/*  testes acima */
-
 .list{
   background-color: #fff;
   padding-bottom: 4rem;
@@ -233,6 +152,7 @@
 
   .list__title{
     font-size: 3rem;
+    text-align: center;
     padding-top: 3rem;
   }
 
