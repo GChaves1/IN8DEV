@@ -9,7 +9,7 @@ function DesktopMobile({ formDataList }) {
 
     /* Preencher a lista dos botoes com os dados recebidos do cadastro e valores vazios */
     if (formDataList && formDataList.length > 0) {
-      const newDataButtons = formDataList.slice(-4);
+      const newDataButtons = formDataList.slice(-4).reverse();
       const emptyDataButtons = Array(4 - newDataButtons.length).fill({});
       setDataButtons([...emptyDataButtons, ...newDataButtons]);
     } else {
