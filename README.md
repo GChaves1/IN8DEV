@@ -7,7 +7,7 @@
   Responsivo, adaptando-se a diferentes tamanhos de tela.
 
 # Como usar
-  1. Clone o repositório:
+  1. Clone o repositório:                                                                                                                                                                                                                         
   `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
 
   2. Instale as dependências:
